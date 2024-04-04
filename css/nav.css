@@ -1,0 +1,158 @@
+/* NAV */
+:root {
+    --clr: #222327;
+}
+
+.navigation {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.navigation .logo {
+    display: flex;
+    justify-content: start;
+    margin-left: -14%;
+}
+
+.navigation .logo a {
+    color: black;
+    font-size: 35px;
+    font-weight: 600;
+
+}
+
+.navigation .logo a span {
+    color: #fa6216;
+    transition: all 0.3s ease;
+}
+
+.navigation.sticky .logo a span {
+    color: #fff;
+
+}
+
+.navigation.sticky .logo a {
+    color: #fa6216;
+
+}
+
+
+.navigation.sticky {
+    background: black;
+    width: 100%;
+}
+
+.navigation ul {
+    display: flex;
+    width: 350px;
+    position: relative;
+}
+
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 2;
+}
+
+.navigation ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    line-height: 100px;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: 0.5s;
+    color: black;
+
+}
+
+.navigation.sticky ul li a .icon {
+    color: white;
+}
+
+.navigation ul li a .text {
+    position: absolute;
+    color: black;
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.navigation.sticky ul li a .text {
+    color: white;
+}
+
+.navigation ul li.active a .text {
+    transform: translateY(10px);
+    opacity: 1;
+}
+
+.navigation.sticky .indicator {
+    background: #fa6216;
+}
+
+div.navigation.avtive {
+
+    display: block;
+}
+
+.indicator {
+    align-items: center;
+    top: -9px;
+    position: absolute;
+    margin: 14px;
+    width: 40px;
+    height: 40px;
+    background: #fa6216;
+    border-radius: 50%;
+    border: 6px transparent;
+    transition: 0.5s;
+}
+
+
+.navigation ul li.active a .icon {
+    transform: translateY(-22px);
+}
+
+
+.navigation ul li:nth-child(1).active~.indicator {
+    transform: translateX(calc(70px * 0));
+}
+
+.navigation ul li:nth-child(2).active~.indicator {
+    transform: translateX(calc(70px * 1));
+}
+
+.navigation ul li:nth-child(3).active~.indicator {
+    transform: translateX(calc(70px * 2));
+}
+
+.navigation ul li:nth-child(4).active~.indicator {
+    transform: translateX(calc(70px * 3));
+}
+
+.navigation ul li:nth-child(5).active~.indicator {
+    transform: translateX(calc(70px * 4));
+}
