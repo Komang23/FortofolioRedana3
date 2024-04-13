@@ -47,14 +47,14 @@ $(document).ready(function () {
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Backend Developer", "Blogger", "Frontend ", "Freelancer"],
+        strings: ["Frontend Developer", "Networking", "Backend Developer ", "Freelancer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Backend Developer", "Blogger", "Frontend ", "Freelancer"],
+        strings: ["Frontend Developer", "Networking", "Backend Developer ", "Freelancer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -97,14 +97,14 @@ particlesJS("particles", {
             }
         },
         color: {
-            value: "#222"
+            value: "#fff"
 
         },
         shape: {
             type: "circle",
             stroke: {
                 width: 2,
-                color: "#222",
+                color: "#fff",
             }
         },
         opacity: {
@@ -124,7 +124,7 @@ particlesJS("particles", {
         line_linked: {
             enable: true,
             distance: 150,
-            color: "#222",
+            color: "#fff",
             opacity: 0.4,
             width: 2
         },

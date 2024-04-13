@@ -7,7 +7,7 @@
 }
 
 @media (max-width: 991px) {
-    .max-width {
+    div.max-width {
         padding: 0 50px;
     }
 }
@@ -27,7 +27,7 @@
         position: fixed;
         height: 100vh;
         width: 100%;
-        left: -100%;
+        left: -120%;
         top: 0;
         background: #111;
         text-align: center;
@@ -41,7 +41,7 @@
     .navigation.active {
         left: 0;
         margin: 0;
-        min-width: 100vh;
+
         padding: 0;
         display: block;
         justify-content: center;
@@ -90,9 +90,9 @@
         margin: 0;
         padding: 0;
         border-radius: 50%;
-        top: 35px;
-        left: 45.5%;
-        right: 54.5%;
+        top: 30px;
+        left: 45.7%;
+        right: 54.3%;
         display: flex;
     }
 
@@ -111,24 +111,24 @@
 
 
     div.navigation ul li:nth-child(1).active~.indicator {
-        transform: translateY(calc(132px * 0));
+        transform: translateY(calc(130px * 0));
     }
 
     div.navigation ul li:nth-child(2).active~.indicator {
-        transform: translateY(calc(132px * 1));
+        transform: translateY(calc(130px * 1));
     }
 
 
     div.navigation ul li:nth-child(3).active~.indicator {
-        transform: translateY(calc(132px * 2));
+        transform: translateY(calc(130px * 2));
     }
 
     div.navigation ul li:nth-child(4).active~.indicator {
-        transform: translateY(calc(132px * 3));
+        transform: translateY(calc(130px * 3));
     }
 
     div.navigation ul li:nth-child(5).active~.indicator {
-        transform: translateY(calc(132px * 4));
+        transform: translateY(calc(130px * 4));
     }
 
 
@@ -170,20 +170,20 @@
 
 
 
-    .home .home-content .text-2 {
+    section.home .home-content .text-2 {
         font-size: 70px;
     }
 
-    .home .home-content .text-3 {
+    section.home .home-content .text-3 {
         font-size: 35px;
     }
 
-    .home .home-content a {
+    section.home .home-content a {
         font-size: 23px;
         padding: 10px 30px;
     }
 
-    .max-width {
+    div.max-width {
         max-width: 930px;
     }
 
@@ -214,30 +214,40 @@
 }
 
 @media (max-width: 690px) {
-    .home {
+    .navigation.active .indicator {
+        left: 43%;
+        right: 57%;
+
+    }
+
+    .navigation.active {}
+
+    section.home {
         display: flex;
-        background: url("images/5.jpg") no-repeat center;
+        background: url("/img/bg1.jpg") no-repeat center;
         height: 100vh;
         width: 100%;
         min-height: 500px;
         background-size: cover;
         background-attachment: fixed;
         font-family: 'Ubuntu', sans-serif;
+        transition: background-image 0.5s ease;
+
     }
 
-    .max-width {
+    div.max-width {
         padding: 0 23px;
     }
 
-    .home .home-content .text-2 {
+    section.home .home-content .text-2 {
         font-size: 60px;
     }
 
-    .home .home-content .text-3 {
+    section.home .home-content .text-3 {
         font-size: 32px;
     }
 
-    .home .home-content a {
+    section.home .home-content a {
         font-size: 20px;
     }
 
@@ -247,12 +257,18 @@
 }
 
 @media (max-width: 500px) {
-    .home .home-content .text-2 {
-        font-size: 50px;
+    .navigation.active .indicator {
+        left: 40%;
+        right: 60%;
+
     }
 
-    .home .home-content .text-3 {
-        font-size: 27px;
+    section.home .home-content .text-2 {
+        font-size: 45px;
+    }
+
+    section.home .home-content .text-3 {
+        font-size: 25px;
     }
 
     .about .about-content .right .text,
