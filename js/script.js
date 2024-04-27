@@ -178,3 +178,11 @@ window.addEventListener('scroll', function () {
         scrollTopButton.style.display = 'none';
     }
 });
+
+
+//Loading
+var loading = document.getElementById('loading');
+
+window.addEventListener('load', function() {
+    loading.style.display="none";
+});
